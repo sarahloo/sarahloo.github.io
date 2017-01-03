@@ -1,0 +1,62 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("images/hero.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: "MS Sans Serif", Geneva, sans-serif ;
+}
+
+header, footer {
+	padding: 20px 80px;
+	background: rgb(144,186,214);
+	text-align: right;
+}
+
+
+nav a {
+	font-family: "MS Sans Serif", Geneva, sans-serif ;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-right: 15px;
+}
+
+main {
+	margin: 20px 80px;
+}
+
+h1 {
+	font-family: "MS Sans Serif", Geneva, sans-serif ;
+	font-size: 25px;
+}
+
+p {
+	font-family: "MS Sans Serif", Geneva, sans-serif ;
+	font-weight: 100;
+	line-height: 1.4;
+	padding: 5px 0px;
+}
+
+figure {
+	padding: 20px 0px;
+	width: 33%;
+}
+
+figcaption {
+	font-size: 12px;
+	text-align: center;
+}
+
+#slogan {
+	font-size: 20px;
+}
+
+.thumbnail {
+	height: 400px;
+	opacity: 0.5;
+}
