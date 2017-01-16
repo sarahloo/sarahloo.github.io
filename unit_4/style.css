@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Rubik:700');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("images/hero.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Lato', sans-serif;
+}
+
+header, footer {
+	padding: 20px 80px;
+	background: rgb(144,186,214);
+	text-align: right;
+}
+
+
+nav a {
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-right: 15px;
+}
+
+main {
+	margin: 20px 80px;
+}
+
+h1, h2, h3 {
+	font-family: 'Rubik';
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.4;
+	padding: 5px 0px;
+}
+
+figure {
+	padding: 20px 0px;
+	width: 33%;
+}
+
+figcaption {
+	font-size: 12px;
+	text-align: center;
+}
+
+#slogan {
+	font-size: 20px;
+}
+
+.thumbnail {
+	height: 400px;
+	opacity: 0.5;
+}
