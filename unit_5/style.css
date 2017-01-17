@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans|Work+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:700');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* default background, font and links */
+
+body {
+	background-image: url("images/background.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #f0f0f0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 110%;
+	color: black;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* header and footer nav links */
+
+header, footer {
+	padding: 0em 5em;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	background: #FFED74;
+}
+
+footer {
+	background: #FF957E;
+}
+
+header a:link, footer a:link {
+	float: right;
+	font-size: .75em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 1.2em 0.5em;
+	margin: 0 0.5em;
+	border-top: 0.5em solid transparent;
+	border-bottom: 0.5em solid transparent;
+	background: #E8C66A;
+}
+
+header a:hover {
+	border-top: rgb(255,100,65) .5em solid;
+}
+
+footer a:hover {
+	border-bottom: rgb(255,100,65) .5em solid;
+}
+
+/* main wrapper */
+
+main {
+	width: 50em;
+	margin: 7.5em auto 2.5em;
+	background: #FFC675;
+}
+
+section {
+	background: #FFE2B8;
+	border: 1px solid black;
+}
+
+/* thumbnail styling */
+
+article {
+	border-top: 0.5em solid transparent;
+	width: 50%;
+	float: right;
+	text-align: center;
+	background: #E89C6C;
+}
+
+article:hover {
+	border-top: .5em solid rgb(255,100,65);
+	font-weight: 700;
+}
+
+/* font styling */
+
+h2, #slogan {
+	font-family: 'PT Serif', serif;
+}
+
+h2, h3 {
+	padding: 1em 0 0.4em;
+}
+
+p {
+	padding-bottom: 0.8em;
+}
+
+p a:link {
+	border-bottom: 1px dotted black;
+}
+
+p a:hover {
+	color: rgb(255,100,65);
+	border-bottom: 0em;
+}
+
+ul {
+	padding-left: 1em;
+}
+
+hr {
+	width: 4em;
+	height: .4em;
+	background-color: black;
+	margin: 1.6em 0em;
+	border: 0;
+}
+
+#nav-home {
+	float: left;
+}
+
+#intro, #about {
+	width: 50%;
+	padding: 2.5em 0;
+	clear: both;
+}
+
+#slogan {
+	font-size: 2em;
+	line-height: 1.1;
+	padding-bottom: 0.8em;
+}
+
+.spacer {
+	width: 50%;
+	height: 10em;
+	float: right;
+}
+
+.thumbnail {
+	width: 100%;
+}
+
+.project-category {
+	font-size: .75em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	top: -1em;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+
+	height: 0;
+	font-size: 0;
+	visibility; hidden;
+}
