@@ -14,7 +14,7 @@ body {
 	background-attachment: fixed;
 	background-color: #f0f0f0;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 110%;
+	font-size: 17.6px;
 	color: black;
 	line-height: 1.6;
 }
@@ -39,11 +39,10 @@ nav {
 header {
 	position: fixed;
 	top: 0;
-	right: 0;
 	z-index: 1;
 }
 
-header a:link, footer a:link {
+header a:link, footer a:link, label{
 	font-size: .75em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -74,8 +73,6 @@ main {
 article {
 	border-top: 0.5em solid transparent;
 	width: 49%;
-	/*float: right;
-	margin-left: 1%;*/
 	text-align: center;
 	margin-bottom: 5em;
 }
@@ -166,4 +163,94 @@ hr {
 	height: 0;
 	font-size: 0;
 	visibility; hidden;
+}
+
+/* menu (mobile view only) */
+
+label, #menu {
+	display: none;
+}
+
+#menu:checked + nav{
+	display: block;
+}
+
+/*breakpoints*/
+
+@media only screen and (max-width: 1055px) {
+	header, footer {
+		padding: 0em 0em;
+		width: 83.5%;
+		margin: 0 auto;
+	}
+	header {
+		right: 8.25%;
+	}
+	main {
+		width: 83.5%;
+		margin: 5.5em auto 2.5em;
+	}
+}
+
+@media only screen and (max-width: 803px) {
+	article, #intro, #about {
+		width: 100%;
+	}
+	article {
+		float: none;
+		margin-bottom: 2em;
+	}
+	article:nth-of-type(even) {
+		top: 0em;
+	}
+	#about {
+		padding-top: 0em;
+	}
+}
+
+@media only screen and (max-width: 544px) {
+	body {
+		font-size: 16px;
+	}
+	main {
+		margin: 2.5em auto 0;
+	}
+	article {
+		margin-bottom: 0.25em;
+	}
+	footer nav {
+		float: none;
+	}
+	footer a:link {
+		display: block;
+		text-align: center;
+		padding: 0.6em 0.5em;
+	}
+	footer a:hover {
+		border-bottom: 0.5em solid transparent;
+		color: rgb(255,100,65);
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	label {
+		display: block;
+		text-align: center;
+	}
+	#nav-home {
+		display: none;
+	}
+	header nav {
+		float: none;
+		display: none;
+	}
+	header a:link {
+		display: block;
+		text-align: center;
+		padding: 0.5em 0.5em;
+	}
+	header a:hover {
+		border-top: 0.5em solid transparent;
+		color: rgb(255,100,65);
+	}
 }
