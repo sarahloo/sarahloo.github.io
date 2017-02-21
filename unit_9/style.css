@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans|Work+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:700');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* default background, font and links */
+
+body {
+	background-image: url("images/background.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #f0f0f0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 17.6px;
+	color: black;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* header and footer nav links */
+
+header, footer {
+	padding: 0em 5em;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+nav {
+	float: right;
+}
+
+header {
+	position: fixed;
+	background-color: #f0f0f0;
+	opacity: 0.9;
+	top: 0;
+	z-index: 1;
+}
+
+header a:link, footer a:link, label{
+	font-size: .75em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 1.2em 0.5em;
+	margin: 0 0.5em;
+	display: inline-block;
+	border-top: 0.5em solid transparent;
+	border-bottom: 0.5em solid transparent;
+}
+
+header a:hover {
+	border-top: rgb(255,100,65) .5em solid;
+}
+
+footer a:hover {
+	border-bottom: rgb(255,100,65) .5em solid;
+}
+
+/* main wrapper */
+
+main {
+	width: 50em;
+	margin: 5.5em auto 2.5em;
+}
+
+/* thumbnail styling */
+
+article {
+	border-top: 0.5em solid transparent;
+	text-align: center;
+	margin-bottom: 7.5em;
+}
+
+#right-column {
+	float: right;
+	width: 48.5%;
+	margin-left: 1.5%;
+}
+
+#left-column {
+	float: left;
+	width: 48.5%;
+	margin-right: 1.5%;
+	position: relative;
+	top: 15em;
+}
+
+article:hover {
+	border-top: .5em solid rgb(255,100,65);
+}
+
+/* font styling */
+
+h2, #slogan {
+	font-family: 'PT Serif', serif;
+}
+
+h2, h3 {
+	padding: 1em 0 0.4em;
+}
+
+p {
+	padding-bottom: 0.8em;
+}
+
+p a:link {
+	border-bottom: 1px dotted black;
+}
+
+p a:hover {
+	color: rgb(255,100,65);
+	border-bottom: 0em;
+}
+
+ul {
+	padding-left: 1em;
+}
+
+hr {
+	width: 4em;
+	height: .4em;
+	background-color: black;
+	margin: 1.6em 0em;
+	border: 0;
+}
+
+#nav-home {
+	float: left;
+}
+
+#intro, #about {
+	width: 50%;
+	padding: 2.5em 0;
+	clear: both;
+}
+
+#about {
+	margin-top: 10em;
+}
+
+#slogan {
+	font-size: 2em;
+	line-height: 1.1;
+	padding-bottom: 0.8em;
+}
+
+.thumbnail {
+	width: 100%;
+}
+
+.project-category {
+	font-size: .75em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	top: -1em;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+	visibility; hidden;
+}
+
+/* menu (mobile view only) */
+
+label, #menu {
+	display: none;
+}
+
+#menu:checked + nav{
+	display: block;
+}
+
+/*breakpoints*/
+
+@media only screen and (max-width: 1055px) {
+	header, footer {
+		padding: 0em 0em;
+		width: 83.5%;
+		margin: 0 auto;
+	}
+	header {
+		right: 8.25%;
+	}
+	main {
+		width: 83.5%;
+		margin: 5.5em auto 2.5em;
+	}
+}
+
+@media only screen and (max-width: 803px) {
+	#left-column, #right-column, #intro, #about {
+		width: 100%;
+	}
+	#left-column, #right-column {
+		float: none;
+	}
+	#left-column {
+		top: 0em;
+	}
+	article {
+		margin-bottom: 2em;
+	}
+	#about {
+		padding-top: 0em;
+	}
+}
+
+@media only screen and (max-width: 544px) {
+	body {
+		font-size: 16px;
+	}
+	main {
+		margin: 2.5em auto 0;
+	}
+	article {
+		margin-bottom: 0.25em;
+	}
+	footer nav {
+		float: none;
+	}
+	footer a:link {
+		display: block;
+		text-align: center;
+		padding: 0.6em 0.5em;
+	}
+	footer a:hover {
+		border-bottom: 0.5em solid transparent;
+		color: rgb(255,100,65);
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	label {
+		display: block;
+		text-align: center;
+	}
+	#nav-home {
+		display: none;
+	}
+	header nav {
+		float: none;
+		display: none;
+	}
+	header a:link {
+		display: block;
+		text-align: center;
+		padding: 0.5em 0.5em;
+	}
+	header a:hover {
+		border-top: 0.5em solid transparent;
+		color: rgb(255,100,65);
+	}
+}
