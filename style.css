@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans|Work+Sans:600');
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:700');
-
 * {
 	margin: 0px;
 	padding: 0px;
@@ -79,8 +76,8 @@ main {
 article {
 	border-top: 0.5em solid transparent;
 	width: 49%;
-	text-align: center;
-	margin-bottom: 2.5em;
+	text-align: right;
+	margin-bottom: 1.5em;
 }
 
 article:nth-of-type(odd) {
@@ -109,9 +106,12 @@ article img:hover {
 
 /* font styling */
 
-h2, #slogan {
-	font-family: 'PT Serif', serif;
-}
+h2 {
+	font-family: korolev, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 1px;}
 
 h2, h3 {
 	padding: 1em 0 0.4em;
@@ -152,18 +152,19 @@ hr {
 	clear: both;
 }
 
+
+.intro-text {
+	font-size: 1.5em;
+	line-height: 1.3;
+	padding-bottom: 0.8em;
+}
+
 #intro div {
 	width: 49%;
 	padding: 2.5em 0;
 	margin-bottom: 1.5em;
 	clear: both;
 	float: right;
-}
-
-.intro-text {
-	font-size: 1.5em;
-	line-height: 1.3;
-	padding-bottom: 0.8em;
 }
 
 .thumbnail {
@@ -191,7 +192,7 @@ hr {
 
 @media only screen and (max-width: 1055px) {
 	header, footer {
-		padding: 0em 0em;
+		/*padding: 0em 0em;
 		width: 83.5%;
 		margin: 0 auto;
 	}
@@ -201,7 +202,7 @@ hr {
 	main {
 		width: 83.5%;
 		margin: 5.5em auto 2.5em;
-	}
+	}*/
 }
 
 @media only screen and (max-width: 803px) {
@@ -215,6 +216,12 @@ hr {
 	article:nth-of-type(even) {
 		top: 0em;
 	}
+	
+	#intro div {
+		float: none;
+		width: 100%;
+	}
+
 	#about {
 		padding-top: 0em;
 	}
