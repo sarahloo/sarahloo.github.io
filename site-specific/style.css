@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* default background */
+
+body {
+/*	background-image: url("images/background.png");
+	background-size: cover;
+	background-attachment: fixed; */
+	background-color: rgb(247,243,226);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 0.03em;
+	color: black;
+	line-height: 1.6;
+	overflow-y: scroll;
+}
+
+
+/* font styling */
+
+h2 {
+	font-size: 2.5em;
+	line-height: 1.25em;
+	margin-bottom: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	padding-bottom: 0.8em;
+}
+
+p a:link {
+	border-bottom: 1px dotted black;
+}
+
+hr {
+	width: 4em;
+	height: .4em;
+	background-color: black;
+	margin: 1.6em 0em;
+	border: 0;
+}
+
+.intro {
+	font-size: 1.3em;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+.nav {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+}
+
+.nav:hover {
+	font-weight: 400;
+	color: rgb(255,68,82);
+	letter-spacing: 0.01em;
+}
+
+
+/*intro screen */
+
+header {
+	height: 40vh;
+	transition: 1s;
+}
+
+header div {
+	padding: 2em 5em;
+}
+
+/* main wrapper */
+
+main {
+	width: 100%;
+	position: initial;
+}
+
+
+/*header image*/
+
+#headerimage {
+	height: 60vh;
+	background-color: red;
+	position: relative;
+	animation-name: bkgrndchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+#screen {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(247,243,226);
+	position: absolute;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.imageoverlay {
+	opacity: 0.8;
+	position: absolute;
+	transition: opacity 0.5s;
+	transition: transform 0.5s;
+    overflow: hidden;
+}
+
+.imageoverlay:hover {
+	opacity: 1;
+	cursor: pointer;
+ 	transform: scale(1.05, 1.05);
+ 	-webkit-transform: scale(1.05, 1.05);
+ 	-ms-transform: scale(1.05, 1.05);
+}
+
+.headerbackgroundimage {
+	height: 100%;
+	width: 100%;
+    background-image: url('images/Background_header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    top: 0;
+    opacity: 1;
+}
+
+/* content block */
+
+#content {
+	margin: 0 4em 3em;
+	padding: 2em 0;
+	position: relative;
+	clear: both;
+	display: none;
+}
+
+#reflection1, #reflection2, #reflection3, #future {
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 1s;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	position: absolute;
+	top: 0;
+}
+
+.flex div {
+	margin: 0 1em;
+	padding: 2em 0;	
+}
+
+.flex div:nth-of-type(1) {
+	width: 40%;
+}
+
+.flex div:nth-of-type(2) {
+	width: 60%;
+}
+
+
+/*animation*/
+
+@keyframes bkgrndchange {
+    0%   {background-color: rgb(255,93,22);}
+    50%  {background-color: rgb(255,68,82);}
+    100%   {background-color: rgb(255,93,22);}
+}
+
+/*breakpoints
+
+@media only screen and (max-width: 1055px) {
+	main {
+		width: 83.5%;
+		margin: 5.5em auto 2.5em;
+	}
+}
+
+@media only screen and (max-width: 544px) {
+	body {
+		font-size: 16px;
+	}
+	main {
+		margin: 2.5em auto 0;
+	}
+}
+*/

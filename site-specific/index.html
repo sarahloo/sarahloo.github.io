@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site-specific | Studio Knowledge Object</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--[if lt IE 9]>
+    	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="javascript.js" type="text/javascript"></script>
+</head>
+<body>
+	<header id=alert>
+		<div>
+			<h1>SKO</h1>
+			<p onclick="closealert();">&times;</p>
+		</div>
+	</header>
+	<main>
+		<section id=headerimage>
+			<div id=screen></div>
+			<div class=headerbackgroundimage>
+			</div>
+			<div class=imageoverlay title="Context" style="height: 85%; left: 50%; top: 50%; transform:translate(-50%,-50%);">
+				<img src="images/MeatHall.png" height=100% onclick="hideall(); showcontext();"/>
+			</div>
+			<div class=imageoverlay style="height: 35%; left: 30%; bottom: 0;">
+				<img src="images/R4_Future.png" title="Future applications" height=100% onclick="hideall(); showfuture();"/>
+			</div>
+			<div class=imageoverlay style="height: 65%; left: 50%; bottom: 0;">
+				<img src="images/R2_Digital.png" title="Reflection: Digital + physical media" height=100% onclick="hideall(); show2();"/>
+			</div>
+			<div class=imageoverlay title="Heritage curation and preservation" style="height: 80%; right: 0; bottom: 0;">
+				<img src="images/R3_Heritage.png" height=100% onclick="hideall(); show3();"/>
+			</div>
+			<div class=imageoverlay title="Content, context, form" style="height: 100%; left: 0; bottom: 0;">
+				<img src="images/R1_Content.png" height=100% onclick="hideall(); show1();"/>
+			</div>
+		</section>
+		<section id=content>
+			<article class=flex id=context>
+				<div>
+					<h2>Context</h2>
+					<p><span class=nav onclick="hideall(); show1();">Next &raquo;</span></p>
+				</div>
+				<div>
+					<p class=intro>The <em>Site-specific</em> studio explored place-based storytelling and heritage interpretation of the Queen Victoria Market, in an interdisciplinary studio environment.</p>
+					<p>The field of heritage interpretation aims to help visitors understand the significance of a place, by communicating stories in a way that creates engaging and meaningful experiences (Interpretation Australia, 2017). While all interpretation involves information, the goal is not to instruct but to provoke further thought and learning – most effectively achieved by connecting with visitors’ personal lives (Tilden, 1957).</p>
+				</div>
+			</article>
+			<article class="flex fadeout" id=reflection1>
+				<div>
+					<h2>Reflection:<br/> Content, context, form</h2>
+					<p><span class=nav onclick="hideall(); showcontext();">&laquo; Previous</span> | <span class=nav onclick="hideall(); show2();">Next &raquo;</span></p>
+				</div>
+				<div>
+					<p class=intro>Designing for physical environments highlighted the value of holistically considering content, context and form when shaping user experiences.</p>
+					<p>While prototyping our projection installation I discovered the technicalities of working with built environments, including lighting, materials, placement and scale. Although initially challenging, the importance visitors placed on the site’s physical characteristics encouraged me to work with, rather than against, them. I realised that incorporating contextual elements upfront – even letting them shape content and aesthetics – could result in more integrated, effective designs.</p>	
+					<p>The real-world setting also made me more conscious of the end user, compared to self-contained objects like books or websites. Site visits and ethnographic research helped me better appreciate visitors’ perspectives, which in turn prompted more critical evaluation of how my design choices impacted their experience of the market. This included how they would discover and interact with the work, their reward for doing so, and the kinds of responses we hoped to elicit.</p>
+					<p>This experience has re-emphasised the benefits of consciously designing for audiences and contexts – be they personal, physical or cultural. It has also shifted my perspective on the role of designers: from one that is primarily concerned with aesthetics, to one that can profoundly impact people’s perceptions through strategically uniting ideas and their presentation with the surrounding environment.</p>
+				</div>
+			</article>
+			<article class=flex id=reflection2>
+				<div>
+					<h2>Reflection:<br/> Digital + physical media</h2>
+					<p><span class=nav onclick="hideall(); show1();">&laquo; Previous</span> | <span class=nav onclick="hideall(); show3();">Next &raquo;</span></p>
+				</div>
+				<div>
+					<p class=intro>Collaborating with Digital Media students demonstrated how diverse skills could lead to richer experiences – both within a medium and across multiple touchpoints.</p>
+					<p>I felt that our installation was more dynamic as a result of adding sound and animation. I also witnessed how other groups’ projects incorporated physical and digital media to create more comprehensive experiences, which extended beyond the physical boundaries of the market and prolonged the engagement.</p>		
+					<p>While this made me conscious of my own limitations, I recognised the impracticality of a single person delivering complex multimedia projects. However, I also realised that skills like communication and project management were equally important in collaborative projects, enabling our team to utilise our individual strengths, identify and plan for dependencies, and ensure our contributions came together as a whole.</p>
+					<p>The interest in technologies like augmented reality hints at the opportunities of integrating physical and digital media – and collaborating with specialists from other fields. As a communication designer, I’m aware of the need to become familiar with emerging tools and technologies: not only to aid communication between disciplines, but also to identify how they can be purposefully applied.</p>
+				</div>
+			</article>
+			<article class=flex id=reflection3>
+				<div>
+					<h2>Reflection:<br/> Heritage curation and preservation</h2>
+					<p><span class=nav onclick="hideall(); show2();">&laquo; Previous</span> | <span class=nav onclick="hideall(); showfuture();">Next &raquo;</span></p>
+				</div>
+				<div>
+					<p class=intro>The Queen Victoria Market’s rich and contentious history underscored the influence – and responsibility – of interpretation designers in determining which heritage elements to communicate and preserve.</p>
+					<p>Through research, I developed an understanding of the market’s multifaceted character and highly personal relationships with visitors formed across generations. Community feedback on the market renewal project showed me the breadth of (sometimes contradicting) opinions, coloured by biases resulting from the historical conflicts between council and community.</p>		
+					<p>I therefore found it challenging to decide on a small selection of content that reflected this diversity of perspectives – further compounded by the changing and intangible nature of the market experience, one of its most highly-valued attributes. I felt there was a tension between designing interventions to change perceptions, and presenting an ‘un-authored’ experience that visitors could directly engage with on their terms.</p>
+					<p>Dealing with complex subject matter helped me recognise the benefits of open frameworks that can accommodate adaptation and individualised interpretation, rather than prescriptive, finalised solutions. It also made me aware of the way in which biases can manifest in design work – and the subsequent value of seeking out diverse perspectives in my future practice.</p>
+				</div>
+			</article>
+			<article class=flex id=future>
+				<div>
+					<h2>Future</h2>
+					<p><span class=nav onclick="hideall(); show3();">&laquo; Previous</span></p>
+				</div>
+				<div>
+					<p class=intro>The studio’s open brief and subject matter emphasised the cultural importance of design in influencing what we value, and consequently our understanding of our place in the world.</p>
+					<p>I learnt that expanding our design focus to include the message and its presentation could result in more powerful work, unique to the challenge at hand – increasingly important as automation and artificial intelligence gain prevalence. I’m also more conscious of context and audience as no design exists in isolation: it is a product of, and perceived in relation to, prevailing cultural, societal and political trends.</p>	
+					<p>I therefore aim to be a more mindful designer – aware of bias and striving to design open solutions that respect audiences’ autonomy, and inspire curiosity rather than prescribe thought.</p>
+				</div>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
