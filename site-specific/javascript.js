@@ -1,5 +1,6 @@
 function closealert() {
  		document.getElementById("alert").style.height = 0;
+ 		document.getElementById("alert").style.opacity = 0;
  		document.getElementById("screen").style.display = "none";
  		document.getElementById("content").style.display = "block";
 }
