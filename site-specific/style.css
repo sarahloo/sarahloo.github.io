@@ -49,6 +49,11 @@ a {
 	color: black;
 }
 
+a:hover {
+	color: rgb(255,68,82);
+
+}
+
 p {
 	padding-bottom: 0.8em;
 }
